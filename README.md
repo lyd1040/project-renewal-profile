@@ -18,6 +18,7 @@ npm run serve
 ```
 -  Vue
 -  Typescript
+-  scss
 ```
 
 ## 바로가기
