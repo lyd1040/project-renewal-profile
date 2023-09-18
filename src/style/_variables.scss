@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'IAMAPLAYER';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/IAMAPLAYER.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$MainColorGreen: #a1ccd1;
+$MainColorSal: #f4f2de;
+$PointColorOrange: #e9b384;
+$PointColorGreen: #18836c;
+$TextColorSelect: #2e2e2e;
+$TextColorNotSelect: #a2a2a2;
+
+@mixin SetWH($W,$H){
+    width: $W;
+    height: $H;
+}
+
+@mixin displayFlexJA(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin HeaderGnbBeforeAfter($lateX,$lateY){
+    position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate($lateX, $lateY);
+
+        content: '';
+
+        border: 1px solid;
+        border-radius: 50%;
+        padding: 10px;
+
+        width: 100%;
+        height: 100%;
+}
+
+@mixin ListWidthSetting(){
+    .list_question,
+    .list_ask{
+        width: 20px;
+        height: 20px;
+
+        border: 1px solid;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list_writer{
+        width: 20%;
+        border: 1px solid;
+    }
+    .list_title{
+        width: calc(100% - 20% - 40px);
+        border: 1px solid;
+    }
+}
